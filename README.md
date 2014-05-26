@@ -19,6 +19,7 @@ Differential Temperature Thermostat DTT-94, Heliotrope General
 下記にSAS-10の温度(F)-抵抗のテーブルがある
 * http://www.heliodyne.com/products_systems/control_units/SAS-10-RT.pdf
 * http://www.heliodyne.com/products_systems/control_units/DeltaT.pdf
+
 これを
 [resistance-vs-temperature.xlsx](SAS-10/resistance-vs-temperature.xlsx)
 にまとめた。
