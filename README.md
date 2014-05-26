@@ -32,7 +32,7 @@ http://en.wikipedia.org/wiki/Thermistor#Steinhart.E2.80.93Hart_equation
 ただしrは抵抗値(Ω)、tは温度(℃)。
 
 [resistance-vs-temperature.plot](SAS-10/resistance-vs-temperature.plot)
-でフィットすると
+で[フィット](SAS-10/fit.log)すると
 
 | Parameter | Best fit (1/K) |
 |---|------------|
