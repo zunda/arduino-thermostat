@@ -28,7 +28,9 @@ Differential Temperature Thermostat DTT-94, Heliotrope General
 ### 近似式
 http://en.wikipedia.org/wiki/Thermistor#Steinhart.E2.80.93Hart_equation
 より
-`t(r)=1/(a+b*log(r)+c*(log(r)**3))-273.16`
+```
+t(r)=1/(a+b*log(r)+c*(log(r)**3))-273.16
+```
 ただしrは抵抗値(Ω)、tは温度(℃)。
 
 [resistance-vs-temperature.plot](SAS-10/resistance-vs-temperature.plot)
