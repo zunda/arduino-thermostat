@@ -88,17 +88,21 @@ R1 = √(Rmin*Rmax) = 4.7 kΩ
 
 MintDuinoでの試験
 -----------------
-最小の回路図
-https://twitter.com/zundan/status/470310026058285056
+手元に[MintDuino](http://makezine.com/projects/build-a-mintronics-mintduino/)と
+[FTDI Friend](http://www.adafruit.com/products/284)
+があるのでそれを使う。
+
+### 最小の回路図
+![Minimal Circuit](mintduino-minimal.jpg)
 
 ### アナログ入力を読んでシリアルポートに出力してみる
-X1のDebianに入れたarduinoパッケージのarduinoコマンドがIDE。
-* Tools-Board-Arduino Duemilanove w/ ATmega328
-* Tools-Serial Port-/dev/ttyUSB0
-* File-Upload (Ctrl+U) でコンパイル、アップロード、実行
-* Tools-Serial Monitor (Ctrl+Shift+M)でシリアルモニター
+Latitude X1のDebianに入れたarduinoパッケージのarduinoコマンドがIDE。
+* `Tools`-`Board`-`Arduino Duemilanove w/ ATmega328`
+* `Tools`-`Serial Port`-`/dev/ttyUSB0`
+* `File`-`Upload (Ctrl+U)` でコンパイル、アップロード、実行
+* `Tools`-`Serial Monitor (Ctrl+Shift+M)` でシリアルモニター
 
-File-Examples-Basics-ReadAnalogVoltageを改造して(delayを加えて)
+`File`-`Examples`-`Basics`-`ReadAnalogVoltage`を改造して(`delay`を加えて)
 下記のようにして、モニタを開いたら読めているようだ。
 
 ```
