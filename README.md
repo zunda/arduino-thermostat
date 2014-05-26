@@ -17,26 +17,29 @@ Differential Temperature Thermostat DTT-94, Heliotrope General
 ----------
 
 下記にSAS-10の温度(F)-抵抗のテーブルがある
-http://www.heliodyne.com/products_systems/control_units/SAS-10-RT.pdf
-http://www.heliodyne.com/products_systems/control_units/DeltaT.pdf
-
-DropBox/arduino-thermostat/SAS-10/SAS-10-resistance-vs-temperature.xlsx にまとめた。0℃から100℃までを測定しようとすると、32.65kΩから678.4Ωまでを測定する必要がある。
+* http://www.heliodyne.com/products_systems/control_units/SAS-10-RT.pdf
+* http://www.heliodyne.com/products_systems/control_units/DeltaT.pdf
+これを
+[resistance-vs-temperature.xlsx](SAS-10/resistance-vs-temperature.xlsx)
+にまとめた。
+0℃から100℃までを測定しようとすると、32.65kΩから678.4Ωまでを測定する必要がある。
 
 ### 近似式
-
 http://en.wikipedia.org/wiki/Thermistor#Steinhart.E2.80.93Hart_equation
 より
 `t(r)=1/(a+b*log(r)+c*(log(r)**3))-273.16`
 ただしrは抵抗値(Ω)、tは温度(℃)。
 
-DropBox/arduino-thermostat/SAS-10/SAS-10-resistance-vs-temperature.plot
+[resistance-vs-temperature.plot](SAS-10/resistance-vs-temperature.plot)
 でフィットすると
 
-| Parameter | Value (1/K) |
+| Parameter | Best fit (1/K) |
 |---|------------|
 | a | 0.00112974 |
 | b | 0.00023399 |
 | c | 8.8342e-08 |
+
+![resistance-vs-temperature](SAS-10/resistance-vs-temperature.png)
 
 Arduinoでの抵抗値の読み
 --------------------
