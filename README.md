@@ -141,6 +141,7 @@ void loop() {
 * [ ] [2014-05-25現在](https://github.com/zunda/arduino-thermostat/blob/3682cf5b1333f6444b46643b6de784ea26261bb9/read-serial/read-serial.c)では先方からデータと改行が来ないとプログラムを終えることができない
 
 ### 温度計と抵抗を配線して値をしばらく記録してみる
+[ReadAdc.ino](ReadAdc/ReadAdc.ino) で実験中。
 
 ### 値を抵抗や温度に変換してみる
 [Control.ino](Control/Control.ino) で実験中。
