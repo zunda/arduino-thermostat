@@ -232,4 +232,4 @@ main(void)
 ### 値を抵抗や温度に変換してみる
 [Control.ino](Control/Control.ino) で実験中。
 
-* [ ] [2014-05-25現在](./blob/23d273027570fb3063d9018775317773f0e071a8/Control/Control.ino)では読みにずれが見られた
+* [ ] [2014-05-25現在](https://github.com/zunda/arduino-thermostat/blob/23d273027570fb3063d9018775317773f0e071a8/Control/Control.ino)では読みにずれが見られた
