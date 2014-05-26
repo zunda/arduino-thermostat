@@ -147,6 +147,11 @@ void loop() {
 ~/local/src/arduino-thermostat/read-serial/read-serial | tee `date +%Y%m%d`.log
 ```
 
+#### 20140526.log
+`delay(60000)`
+* A0:4.61kΩ+温水タンク直上のSAS-10
+* A1:4.65kΩ+太陽熱温水パネル上の、たぶんSAS-10
+
 ### 値を抵抗や温度に変換してみる
 [Control.ino](Control/Control.ino) で実験中。
 
