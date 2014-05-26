@@ -43,11 +43,11 @@ http://en.wikipedia.org/wiki/Thermistor#Steinhart.E2.80.93Hart_equation
 
 Arduinoでの抵抗値の読み
 --------------------
-* analogRead(pin)は0から5ボルトの入力電圧を0から1023の数字に変換する
-* analogReference(type)はアナログ入力で使われる基準電圧を設定する。
-  * DEFAULT: 電源電圧(5V)
-  * INTERNAL: 内蔵基準電圧(1.1V、2.56V)
-  * EXTERNAL: AREFピンへの電圧(0-5V、32KΩでGNDへ)
+* `analogRead(pin)`は0から5ボルトの入力電圧を0から1023の数字に変換する
+* `analogReference(type)`はアナログ入力で使われる基準電圧を設定する。
+  * `DEFAULT`: 電源電圧(5V)
+  * `INTERNAL`: 内蔵基準電圧(1.1V、2.56V)
+  * `EXTERNAL`: AREFピンへの電圧(0-5V、32KΩでGNDへ)
 
 * http://www.eleki-jack.com/FC/2011/09/arduino2-3.html
   温度計はGNDとアナログ入力の間、アナログ入力と電源の間に固定抵抗
@@ -56,7 +56,7 @@ Arduinoでの抵抗値の読み
 
 分圧抵抗の大きさで分解能が変わるんだねえ。
 Vcc 5VからR1と温度計を直列にGNDまで接続してその接続点の電圧Vadcを読む場合。
-DropBox/arduino-thermostat/SAS-10/SAS-10-resistance-vs-temperature.xlsx より。
+[resistance-vs-temperature.xlsx](SAS-10/resistance-vs-temperature.xlsx)より、
 温度分解能は0-100℃で抵抗値がリニアに変化すると近似した場合。
 
 Rthermo (Ω) | Vadc | Vadc | Vadc | Vadc | Vadc | Vadc | Vadc
