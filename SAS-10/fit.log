@@ -1,0 +1,49 @@
+
+
+*******************************************************************************
+Sun May 25 18:06:26 2014
+
+
+FIT:    data read from "resistance-vs-temperature.dat" using 1:2
+        format = x:z
+        #datapoints = 181
+        residuals are weighted equally (unit weight)
+
+function used for fitting: t(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 153718            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 2.89737e+07
+
+initial set of free parameter values
+
+a               = 0.0014
+b               = 0.000237
+c               = 9.9e-08
+
+After 8 iterations the fit converged.
+final sum of squares of residuals : 0.00244333
+rel. change during last iteration : -1.23491e-10
+
+degrees of freedom    (FIT_NDF)                        : 178
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00370494
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.37266e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 0.00112974       +/- 1.089e-07    (0.009643%)
+b               = 0.00023399       +/- 2.012e-08    (0.0086%)
+c               = 8.8342e-08       +/- 9.727e-11    (0.1101%)
+
+
+correlation matrix of the fit parameters:
+
+               a      b      c      
+a               1.000 
+b              -0.998  1.000 
+c               0.984 -0.992  1.000 
