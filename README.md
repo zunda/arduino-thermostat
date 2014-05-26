@@ -143,6 +143,10 @@ void loop() {
 ### 温度計と抵抗を配線して値をしばらく記録してみる
 [ReadAdc.ino](ReadAdc/ReadAdc.ino) で実験中。
 
+```
+~/local/src/arduino-thermostat/read-serial/read-serial | tee `date +%Y%m%d`.log
+```
+
 ### 値を抵抗や温度に変換してみる
 [Control.ino](Control/Control.ino) で実験中。
 
