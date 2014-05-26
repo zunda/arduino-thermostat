@@ -87,7 +87,7 @@ main(void)
 				}
 			time(&t);
 			localtime_r(&t, &tm);
-			strftime(timestr, sizeof(timestr), "%Y-%m-%d %H:%M:%S ", &tm);
+			strftime(timestr, sizeof(timestr), "%Y-%m-%d %H:%M:%S\t", &tm);
 			fputs(timestr, stdout);
 			fwrite(buffer, n, 1, stdout);
 			fflush(stdout);
