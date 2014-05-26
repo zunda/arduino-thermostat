@@ -32,11 +32,11 @@ http://en.wikipedia.org/wiki/Thermistor#Steinhart.E2.80.93Hart_equation
 DropBox/arduino-thermostat/SAS-10/SAS-10-resistance-vs-temperature.plot
 でフィットすると
 
-Parameter | Value (1/K)
---|-----------
-a | 0.00112974
-b | 0.00023399
-c | 8.8342e-08
+| Parameter | Value (1/K) |
+|---|------------|
+| a | 0.00112974 |
+| b | 0.00023399 |
+| c | 8.8342e-08 |
 
 Arduinoでの抵抗値の読み
 --------------------
