@@ -156,3 +156,42 @@ void loop() {
 [Control.ino](Control/Control.ino) で実験中。
 
 * [ ] [2014-05-25現在](https://github.com/zunda/arduino-thermostat/blob/23d273027570fb3063d9018775317773f0e071a8/Control/Control.ino)では読みにずれが見られた
+* [ ] 入力保護
+
+本番機
+-----
+
+### 買い物
+
+Radioshcakで揃うか?Amazonに行く必要があるか?電源on/offの制御をする部分がRadioshackには無いな。
+
+* [ ] いっそのことフルスペックのArduinoにリレーシールドを重ねるか?
+
+* [ ] メイン基板 [RadioshackのMultirpose PCBoard 417 holes](www.radioshack.com/product/index.jsp?productId=2102845)で良いだろう。下記などが載る必要がある。
+  * 28ピンのATmega328
+  * 電源系
+  * FTDI Friendへの接続
+  * 水晶発振子
+* [x] Arduinoマイコン - MintDuinoからATmega328を流用する
+* [x] CR - 手持ちの実験用のものを流用する
+* [ ] 28ピンのICソケット
+* 入力保護 http://www.designer2k2.at/home/arduino/63-arduino-io-protection.html
+  * [ ] ダイオードの手持ちが4本あるか確認する
+  * [ ] 22Ω程度の小さい抵抗が2本あるか確認する
+  * [ ] 100nFか100pF程度のコンデンサが2本あるか確認する
+* [x] FTDI friend
+  * [ ] 外部とのUSB接続の方法を考える USB-B - USB-miniケーブル?
+* [ ] 入力ターミナル - 4端子
+* [ ] 電源 リレーによるが9Vとか
+* [ ] 出力リレー、接続方法も含めて
+  * 制御対象はGrundfos UP15-29SU 115V 0.75 A http://www.amazon.com/dp/B0018LA39I
+  * リレー4つは多すぎる。DC用だし http://www.radioshack.com/product/index.jsp?productId=12665270
+  * [ ] 2x 7.9VDC 18mA → 12A 125VAC http://www.radioshack.com/product/index.jsp?productId=2049716
+    * [ ] 2x FET
+    * [ ] 例えば10Ωと10kΩの抵抗が2本ずつあるか確認
+    * [ ] ダイオードが2本あるか確認
+  * [ ] もっとお手軽な電源制御部品ないかな。ACを引き込むなら9V電源もケース内蔵型にしよう。
+* [ ] LED表示 電源、データ取得、リレー状態
+
+* [ ] 入力ターミナル - 4端子
+* [ ] ケース
