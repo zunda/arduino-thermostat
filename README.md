@@ -34,7 +34,7 @@ t(r)=1/(a+b*log(r)+c*(log(r)**3))-273.16
 ただしrは抵抗値(Ω)、tは温度(℃)。
 
 [resistance-vs-temperature.plot](SAS-10/resistance-vs-temperature.plot)
-で[フィット](SAS-10/fit.log)すると
+で0-100℃の範囲を[フィット](SAS-10/fit.log)すると
 
 | Parameter | Best fit (1/K) |
 |---|------------|
