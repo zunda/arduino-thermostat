@@ -183,10 +183,9 @@ Radioshcakで揃うか?Amazonに行く必要があるか?電源on/offの制御�
   * [ ] 外部とのUSB接続の方法を考える USB-B - USB-miniケーブル?
 * [ ] 入力ターミナル - 4端子
 * [ ] 電源 リレーによるが9Vとか
-* 出力リレー
-  * [ ] PowerSwitch Tail II - 信号入力3-12Vdc 3-30mA、制御対象120Vac 15A。
-    良さそう。DC電源はもらえないか。
-    * 制御対象はGrundfos UP15-29SU 115V 0.75 A http://www.amazon.com/dp/B0018LA39I
+* 出力リレー - 制御対象はGrundfos UP15-29SU 115V 0.75 A http://www.amazon.com/dp/B0018LA39I
+  * [ ] PowerSwitch Tail II http://www.powerswitchtail.com/Pages/default.aspx - 信号入力3-12Vdc 3-30mA、制御対象120Vac 15A。
+    * 良さそう。DC電源はもらえないか。
 * [ ] LED表示 電源、データ取得、リレー状態
 
 * [ ] 入力ターミナル - 4端子
