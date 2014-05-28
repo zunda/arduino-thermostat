@@ -141,16 +141,27 @@ void loop() {
 * [ ] [2014-05-25現在](https://github.com/zunda/arduino-thermostat/blob/3682cf5b1333f6444b46643b6de784ea26261bb9/read-serial/read-serial.c)では先方からデータと改行が来ないとプログラムを終えることができない
 
 ### 温度計と抵抗を配線して値をしばらく記録してみる
-[ReadAdc.ino](ReadAdc/ReadAdc.ino) で実験中。
+[ReadAdc.ino](ReadAdc/ReadAdc.ino) で実験した。
 
 ```
 ~/local/src/arduino-thermostat/read-serial/read-serial | tee `date +%Y%m%d`.log
 ```
 
-#### 20140526.log
-`delay(60000)`
+#### 2014-05-26
+[20140526.log](ReadAdc/test/20140526.log)
+
+2014-05-26 11:39:27 から始めたログは、
+2014-05-27 10:04:08で終わってしまっていた。
+Arduinoのハングアップ等によるものと思われる。
+ブレッドボードのため不安定なのだろうか?電池が切れたのだろうか?
+
+* `delay(60000)`
 * A0:4.61kΩ+温水タンク直上のSAS-10
 * A1:4.65kΩ+太陽熱温水パネル上の、たぶんSAS-10
+
+!(ReadAdc/test/20140526.png)
+
+[20140526.plot](ReadAdc/test/20140526.plot)により、読みを温度に変換したもの。
 
 ### 値を抵抗や温度に変換してみる
 [Control.ino](Control/Control.ino) で実験中。
