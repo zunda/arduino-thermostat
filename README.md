@@ -176,6 +176,7 @@ Radioshcakで揃うか?Amazonに行く必要があるか?電源on/offの制御�
 * [x] CR - 手持ちの実験用のものを流用する
 * [ ] 28ピンのICソケット
 * 入力保護 http://www.designer2k2.at/home/arduino/63-arduino-io-protection.html
+  * PowerSwitch Tail IIを使う場合には出力保護も必要
   * [ ] ダイオードの手持ちが4本あるか確認する
   * [ ] 22Ω程度の小さい抵抗が2本あるか確認する
   * [ ] 100nFか100pF程度のコンデンサが2本あるか確認する
