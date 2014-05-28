@@ -152,8 +152,7 @@ void loop() {
 
 2014-05-26 11:39:27 から始めたログは、
 2014-05-27 10:04:08で終わってしまっていた。
-Arduinoのハングアップ等によるものと思われる。
-ブレッドボードのため不安定なのだろうか?電池が切れたのだろうか?
+9Vの電池が切れたようだ。
 
 * `delay(60000)`
 * A0:4.61kΩ+温水タンク直上のSAS-10
@@ -176,8 +175,6 @@ Arduinoのハングアップ等によるものと思われる。
 
 Radioshcakで揃うか?Amazonに行く必要があるか?電源on/offの制御をする部分がRadioshackには無いな。
 
-* [ ] いっそのことフルスペックのArduinoにリレーシールドを重ねるか?
-
 * [ ] メイン基板 [RadioshackのMultirpose PCBoard 417 holes](www.radioshack.com/product/index.jsp?productId=2102845)で良いだろう。下記などが載る必要がある。
   * 28ピンのATmega328
   * 電源系
@@ -186,19 +183,19 @@ Radioshcakで揃うか?Amazonに行く必要があるか?電源on/offの制御�
 * [x] Arduinoマイコン - MintDuinoからATmega328を流用する
 * [x] CR - 手持ちの実験用のものを流用する
 * [ ] 28ピンのICソケット
-* 入力保護 http://www.designer2k2.at/home/arduino/63-arduino-io-protection.html
+* 入出力保護 http://www.designer2k2.at/home/arduino/63-arduino-io-protection.html
   * PowerSwitch Tail IIを使う場合には出力保護も必要
-  * [ ] ダイオードの手持ちが4本あるか確認する
-  * [ ] 22Ω程度の小さい抵抗が2本あるか確認する
-  * [ ] 100nFか100pF程度のコンデンサが2本あるか確認する
+  * [ ] ダイオード4本+2本
+  * [x] 22Ω程度の小さい抵抗が2本+1本
+  * [ ] 100nFか100pF程度のコンデンサが2本+3本
 * [x] FTDI friend
   * [ ] 外部とのUSB接続の方法を考える USB-B - USB-miniケーブル?
-* [ ] 入力ターミナル - 4端子
-* [ ] 電源 リレーによるが9Vとか
+* [ ] 電源 9Vとか
+* [ ] 電源コネクタ
 * 出力リレー - 制御対象はGrundfos UP15-29SU 115V 0.75 A http://www.amazon.com/dp/B0018LA39I
   * [ ] PowerSwitch Tail II http://www.powerswitchtail.com/Pages/default.aspx - 信号入力3-12Vdc 3-30mA、制御対象120Vac 15A。
     * 良さそう。DC電源はもらえないか。
-* [ ] LED表示 電源、データ取得、リレー状態
+* [ ] LED表示 電源、データ取得
 
-* [ ] 入力ターミナル - 4端子
+* [ ] 入力ターミナル - 4端子+2端子
 * [ ] ケース
