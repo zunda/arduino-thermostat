@@ -144,7 +144,7 @@ void loop() {
 [ReadAdc.ino](ReadAdc/ReadAdc.ino) で実験した。
 
 ```
-~/local/src/arduino-thermostat/read-serial/read-serial | tee `date +%Y%m%d`.log
+~/local/src/arduino-thermostat/read-serial/read-serial | tee -a ~/tmp/`date +%Y%m%d`.log
 ```
 
 #### 2014-05-26
@@ -159,7 +159,7 @@ Arduinoのハングアップ等によるものと思われる。
 * A0:4.61kΩ+温水タンク直上のSAS-10
 * A1:4.65kΩ+太陽熱温水パネル上の、たぶんSAS-10
 
-!(ReadAdc/test/20140526.png)
+![temperature vs time for 2014-05-26](ReadAdc/test/20140526.png)
 
 [20140526.plot](ReadAdc/test/20140526.plot)により、読みを温度に変換したもの。
 
