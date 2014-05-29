@@ -189,7 +189,6 @@ Radioshcakで揃うか?Amazonに行く必要があるか?電源on/offの制御�
   * [x] 22Ω程度の小さい抵抗が2本+1本
   * [ ] 100nFか100pF程度のコンデンサが2本+3本
 * [x] FTDI friend
-  * [ ] 外部とのUSB接続の方法を考える USB-B - USB-miniケーブル?
 * [ ] 電源 9Vとか
 * [ ] 電源コネクタ
 * 出力リレー - 制御対象はGrundfos UP15-29SU 115V 0.75 A http://www.amazon.com/dp/B0018LA39I
@@ -198,4 +197,5 @@ Radioshcakで揃うか?Amazonに行く必要があるか?電源on/offの制御�
 * [ ] LED表示 電源、データ取得
 
 * [ ] 入力ターミナル - 4端子+2端子
+* [ ] 外部とのUSB接続の方法を考える USB-B - USB-miniケーブル?
 * [ ] ケース
