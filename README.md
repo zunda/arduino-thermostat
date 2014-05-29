@@ -86,6 +86,12 @@ R1 = √(Rmin*Rmax) = 4.7 kΩ
 このとき、この回路を流れる電流の最大は、`Rt = Rmin = 678.4Ω`のとき
 1.1 mA。
 
+Arduino (ATmega328) の注意点
+----------------------------
+http://www.atmel.com/Images/doc8161.pdf
+
+* [ ] 使っていない入力ピンは消費電力を減らすため内部でプルアップしておくのがシンプル p.80
+
 MintDuinoでの試験
 -----------------
 手元に[MintDuino](http://makezine.com/projects/build-a-mintronics-mintduino/)と
