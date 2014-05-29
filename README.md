@@ -93,6 +93,7 @@ http://www.atmel.com/Images/doc8161.pdf
 * [ ] 使っていない入力ピンは消費電力を減らすため内部でプルアップしておくのがシンプル p.80
 * [ ] AREFはAD変換器に直接つながっていてGNDとの間をコンデンサでつなぐことで雑音を減らすことができる p.256
 * [ ] AVCC近く、GNDとの間に100nF、VCCとの間に10μHをつなぐことで雑音を減らすことができる p.258
+
 MintDuinoでの試験
 -----------------
 手元に[MintDuino](http://makezine.com/projects/build-a-mintronics-mintduino/)と
