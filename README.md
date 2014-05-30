@@ -193,18 +193,18 @@ Radioshcakで揃うか?Amazonに行く必要があるか?電源on/offの制御�
 * [ ] 28ピンのICソケット
 * 入出力保護 http://www.designer2k2.at/home/arduino/63-arduino-io-protection.html
   * PowerSwitch Tail IIを使う場合には出力保護も必要
-  * [ ] ダイオード4本+2本
+  * [x] ダイオード4本+2本
   * [x] 22Ω程度の小さい抵抗が2本+1本
-  * [ ] 100nFか100pF程度のコンデンサが2本+3本
+  * [x] 100nFか100pF程度のコンデンサが2本+1本
 * [ ] 100nFと10μH AVCCの雑音低減
-* [ ] 100nF AREFの雑音低減
+* [x] 100nF AREFの雑音低減
 * [x] FTDI friend
-* [ ] 電源 9Vとか
-* [ ] 電源コネクタ
+* [x] 電源 9Vとか
+* [x] 電源コネクタ
 * 出力リレー - 制御対象はGrundfos UP15-29SU 115V 0.75 A http://www.amazon.com/dp/B0018LA39I
   * [ ] PowerSwitch Tail II http://www.powerswitchtail.com/Pages/default.aspx - 信号入力3-12Vdc 3-30mA、制御対象120Vac 15A。
     * 良さそう。DC電源はもらえないか。
-* [ ] LED表示 電源、データ取得
+* [x] LED表示 電源、データ取得
 
 * [ ] 入力ターミナル - 4端子+2端子
 * [ ] 外部とのUSB接続の方法を考える USB-B - USB-miniケーブル?
