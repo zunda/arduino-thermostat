@@ -178,7 +178,7 @@ Radioshcakで揃うか?Amazonに行く必要があるか?電源on/offの制御�
 
 * [ ] いっそのことフルスペックのArduinoにリレーシールドを重ねるか?
 
-* [ ] メイン基板 [RadioshackのMultirpose PCBoard 417 holes](www.radioshack.com/product/index.jsp?productId=2102845)で良いだろう。下記などが載る必要がある。
+* [ ] メイン基板 [RadioshackのMultirpose PCBoard 417 holes](http://www.radioshack.com/product/index.jsp?productId=2102845)で良いだろう。下記などが載る必要がある。
   * 28ピンのATmega328
   * 電源系
   * FTDI Friendへの接続
