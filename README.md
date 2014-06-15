@@ -183,16 +183,10 @@ void loop() {
 
 Radioshcakで揃うか?Amazonに行く必要があるか?電源on/offの制御をする部分がRadioshackには無いな。
 
-* [ ] いっそのことフルスペックのArduinoにリレーシールドを重ねるか?
-
-* [ ] メイン基板 [RadioshackのMultirpose PCBoard 417 holes](http://www.radioshack.com/product/index.jsp?productId=2102845)で良いだろう。下記などが載る必要がある。
-  * 28ピンのATmega328
-  * 電源系
-  * FTDI Friendへの接続
-  * 水晶発振子
+* [x] メイン基板 [RadioshackのPrinted Circuit Board with 780 holes](http://www.radioshack.com/product/index.jsp?productId=2103800)
 * [x] Arduinoマイコン - MintDuinoからATmega328を流用する
 * [x] CR - 手持ちの実験用のものを流用する
-* [ ] 28ピンのICソケット
+* [x] 28ピンのICソケット - 14ピンx2で代用
 * 入出力保護 http://www.designer2k2.at/home/arduino/63-arduino-io-protection.html
   * PowerSwitch Tail IIを使う場合には出力保護も必要
   * [x] ダイオード4本+2本
