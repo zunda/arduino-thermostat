@@ -10,7 +10,7 @@ plot \
 "20140615.A1-104.log" us 2:($1-1024*$2/4.91) tit "4.91V-4.67k-A1-100Kmax-GND"
 set term push
 set term png small size 480,360
-set output "20140616.png"
+set output "20140615.png"
 replot
 unset output
 set term pop
