@@ -1,0 +1,15 @@
+# Vcc 4.91 V
+# | 4.61k Ohm resister
+# A0  
+# | 9.81k Ohm potentiometer
+# GND
+#
+#analogRead Digital-multi-meter(V)
+0 0.00
+60 0.44
+170 0.94
+284 1.45
+389 1.92
+505 2.45
+607 2.91
+703 3.35

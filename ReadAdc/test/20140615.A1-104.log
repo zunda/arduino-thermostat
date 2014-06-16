@@ -1,0 +1,18 @@
+# Vcc 4.91 V (~75 mA total with 1Hz sampling)
+# | 4.67k Ohm resister
+# A1  
+# | 97.5k Ohm potentiometer
+# GND
+#
+#analogRead Digital-multi-meter(V)
+0 0.00
+80 0.53
+165 0.91
+274 1.40
+416 2.04
+512 2.47
+640 3.04
+726 3.43
+830 3.89
+962 4.49
+1002 4.67
