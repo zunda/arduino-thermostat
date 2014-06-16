@@ -22,6 +22,6 @@ void loop() {
   Serial.print(analogRead(pin1));
   Serial.print("\t");
   Serial.println(analogRead(pin2));
-  delay(60000);
+  delay(1000);
 }
 
