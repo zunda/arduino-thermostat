@@ -1,4 +1,4 @@
-# Vcc 4.90 V (~75 mA total with 1Hz sampling)
+# Vcc 4.94 V - linearity is much better and power supply 7805 is much cooler
 # | 4.61k Ohm resister
 # A0  
 # | 97.5k Ohm potentiometer
@@ -6,13 +6,13 @@
 #
 #analogRead Digital-multi-meter(V)
 0 0.00
-95 0.55
-192 1.00
-280 1.40
-420 2.04
-525 2.52
-623 2.97
-753 3.57
-859 4.06
-967 4.55
-988 4.66
+108 0.54
+204 1.00
+291 1.42
+412 2.00
+543 2.62
+641 3.09
+730 3.52
+819 3.95
+926 4.46
+977 4.72
