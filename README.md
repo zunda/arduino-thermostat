@@ -206,7 +206,7 @@ ADCの結果と
 本番機
 -----
 * [回路図](schematic.jpg)
-  * 電源、ATmega328周囲のクロック、リセット、シリアルポートは上記、最小の回路図を参照
+  * 電源、ATmega328周囲のクロック、リセット、シリアルポートは上記、[最小の回路図](#%E6%9C%80%E5%B0%8F%E3%81%AE%E5%9B%9E%E8%B7%AF%E5%9B%B3)を参照
 * [実態配線図](pcb-layout.jpg)
   * [RadioshackのPrinted Circuit Board with 780 holes](http://www.radioshack.com/product/index.jsp?productId=2103800)には横に3穴つながったランドが、電源とGNDラインを挟んで5列ある
 
