@@ -178,6 +178,10 @@ void loop() {
 
 本番機
 -----
+* [schematic.jpg](回路図)
+  * 電源、ATmega328周囲のクロック、リセット、シリアルポートは上記、最小の回路図を参照
+* [pcb-layout.jpg](実態配線図)
+  * [RadioshackのPrinted Circuit Board with 780 holes](http://www.radioshack.com/product/index.jsp?productId=2103800)には横に3穴つながったランドが、電源とGNDラインを挟んで5列ある
 
 ### 買い物
 
