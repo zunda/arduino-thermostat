@@ -87,13 +87,13 @@ void loop() {
 	readResistance(pin1, dr1);
 
 	if (xr1 > 0) {
-		serialPrintFloat(temperature(xr1), 2);
+		serialPrintFloat(temperature(xr1), 3);
 	} else {
 		Serial.print("*");
 	}
 	Serial.print("\t");
 	if (xr2 > 0) {
-		serialPrintFloat(temperature(xr2), 2);
+		serialPrintFloat(temperature(xr2), 3);
 	} else {
 		Serial.print("*");
 	}
