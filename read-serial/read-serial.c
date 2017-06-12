@@ -85,12 +85,15 @@ main(void)
 					if (n == -1) perror("read");
 					break;
 				}
-			time(&t);
-			localtime_r(&t, &tm);
-			strftime(timestr, sizeof(timestr), "%Y-%m-%d %H:%M:%S\t", &tm);
-			fputs(timestr, stdout);
-			fwrite(buffer, n, 1, stdout);
-			fflush(stdout);
+			if (n > 1)
+				{
+					time(&t);
+					localtime_r(&t, &tm);
+					strftime(timestr, sizeof(timestr), "%Y-%m-%d %H:%M:%S\t", &tm);
+					fputs(timestr, stdout);
+					fwrite(buffer, n, 1, stdout);
+					fflush(stdout);
+				}
 		}
 	
 	fputs("Stopping\n", stdout);
