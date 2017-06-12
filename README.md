@@ -219,7 +219,6 @@ Radioshcakで揃うか?Amazonに行く必要があるか?電源on/offの制御�
 * [x] CR - 手持ちの実験用のものを流用する
 * [x] 28ピンのICソケット - 14ピンx2で代用
 * 入出力保護 http://www.designer2k2.at/home/arduino/63-arduino-io-protection.html
-  * PowerSwitch Tail IIを使う場合には出力保護も必要
   * [x] ダイオード4本+2本
   * [x] 22Ω程度の小さい抵抗が2本+1本
   * [x] 100nFか100pF程度のコンデンサが2本+1本
@@ -228,14 +227,11 @@ Radioshcakで揃うか?Amazonに行く必要があるか?電源on/offの制御�
 * [x] FTDI friend
 * [x] 電源 9Vとか
 * [x] 電源コネクタ
-* 出力リレー - 制御対象はGrundfos UP15-29SU 115V 0.75 A http://www.amazon.com/dp/B0018LA39I
-  * [ ] PowerSwitch Tail II http://www.powerswitchtail.com/Pages/default.aspx - 信号入力3-12Vdc 3-30mA、制御対象120Vac 15A。
-    * 良さそう。DC電源はもらえないか。
 * [x] LED表示 電源、データ取得
-
 * [ ] 入力ターミナル - 4端子+2端子
 * [ ] 外部とのUSB接続の方法を考える USB-B - USB-miniケーブル?
 * [ ] ケース
+* 出力リレー - [WeMo Switch](http://www.belkin.com/us/p/P-F7C027/)を利用する
 
 ### 実装
 #### メイン基板
@@ -245,7 +241,7 @@ Radioshcakで揃うか?Amazonに行く必要があるか?電源on/offの制御�
 	* デジタル出力には、D10に緑色、D11に黄色のLEDを仮止めした
   * 左にシリアルポートへのピンヘッド (ケーブルで仮止め)
   * AREFの雑音低減に0.1uF
-  * レギューレタのパスコンに10uF×2
+  * レギュレータのパスコンに10uF×2
 * [裏](pcb-back.jpg)
   * 入力フィルタ、出力保護に0.1uF×3
   * Arduinoの電源パスコンに0.1uF
@@ -256,3 +252,7 @@ Radioshcakで揃うか?Amazonに行く必要があるか?電源on/offの制御�
 
 - ADCの誤差は0 - -2.3 ADC程度になった。
 - 定期的に温度を読むようプログラムしてみた: [Measure.ino](https://github.com/zunda/arduino-thermostat/blob/66e8cd3956cde1d78a7b0b17a49afecef31fe98e/Measure/Measure.ino)
+
+- [ ] パネル側の温度の読みは発振しているように見える。下記の理由から温度計の配線の寄生容量によるものと思われる
+  - ダミーの読み込みを入れてADCの入力電圧を静定させても見える
+  - 入力チャンネルを入れかえると発振しているチャンネルも入れかわる
