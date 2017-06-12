@@ -250,3 +250,9 @@ Radioshcakで揃うか?Amazonに行く必要があるか?電源on/offの制御�
   * 入力フィルタ、出力保護に0.1uF×3
   * Arduinoの電源パスコンに0.1uF
   * クロックに22pF×2
+
+## 試験
+2017-06-11
+
+- ADCの誤差は0 - -2.3 ADC程度になった。
+- 定期的に温度を読むようプログラムしてみた: [Measure.ino](blob/66e8cd3956cde1d78a7b0b17a49afecef31fe98e/Measure/Measure.ino)
