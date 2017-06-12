@@ -255,4 +255,4 @@ Radioshcakで揃うか?Amazonに行く必要があるか?電源on/offの制御�
 2017-06-11
 
 - ADCの誤差は0 - -2.3 ADC程度になった。
-- 定期的に温度を読むようプログラムしてみた: [Measure.ino](./blob/66e8cd3956cde1d78a7b0b17a49afecef31fe98e/Measure/Measure.ino)
+- 定期的に温度を読むようプログラムしてみた: [Measure.ino](https://github.com/zunda/arduino-thermostat/blob/66e8cd3956cde1d78a7b0b17a49afecef31fe98e/Measure/Measure.ino)
