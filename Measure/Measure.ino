@@ -77,8 +77,14 @@ void serialPrintFloat(float value, int digits) {
 
 
 void loop() {
-	float xr1 = readResistance(pin1, dr1);
-	float xr2 = readResistance(pin2, dr2);
+	float xr1;
+	float xr2;
+
+	xr1 = readResistance(pin1, dr1);
+	readResistance(pin2, dr2);
+	delay(1000);
+	xr2 = readResistance(pin2, dr2);
+	readResistance(pin1, dr1);
 
 	if (xr1 > 0) {
 		serialPrintFloat(temperature(xr1), 2);
@@ -93,5 +99,5 @@ void loop() {
 	}
 	Serial.println("");
 
-	delay(1000);
+	delay(9000);
 }
