@@ -82,22 +82,22 @@ void loop() {
 
 	xr1 = readResistance(pin1, dr1);
 	readResistance(pin2, dr2);
-	delay(1000);
+	delay(500);
 	xr2 = readResistance(pin2, dr2);
 	readResistance(pin1, dr1);
 
 	if (xr1 > 0) {
-		serialPrintFloat(temperature(xr1), 3);
+		serialPrintFloat(temperature(xr1), 2);
 	} else {
 		Serial.print("*");
 	}
 	Serial.print("\t");
 	if (xr2 > 0) {
-		serialPrintFloat(temperature(xr2), 3);
+		serialPrintFloat(temperature(xr2), 2);
 	} else {
 		Serial.print("*");
 	}
 	Serial.println("");
 
-	delay(9000);
+	delay(500);
 }
