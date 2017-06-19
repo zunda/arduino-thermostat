@@ -7,5 +7,7 @@ set ylabel "Temperature (^oC)"
 plot \
 '20170611.log' using 1:4 tit 'Panel' lt 1,\
 '20170611.log' using 1:3 tit 'Tank' lt 2,\
+'20170611.log' using 1:($4-$3) tit 'dt' lt 3,\
 '20170612.log' using 1:4 not lt 2,\
-'20170612.log' using 1:3 not lt 1
+'20170612.log' using 1:3 not lt 1,\
+'20170612.log' using 1:($3-$4) not lt 3
