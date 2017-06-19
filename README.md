@@ -248,7 +248,8 @@ Radioshcakで揃うか?Amazonに行く必要があるか?電源on/offの制御�
   * クロックに22pF×2
 
 ## 試験
-### 2017-06-11
+### パネル側の読みが発振している
+2017-06-11
 
 - ADCの誤差は0 - -2.3 ADC程度になった(上記 ADCの較正)
 - 定期的に温度を読むようプログラムしてみた: [Measure.ino](https://github.com/zunda/arduino-thermostat/blob/66e8cd3956cde1d78a7b0b17a49afecef31fe98e/Measure/Measure.ino)
@@ -257,7 +258,9 @@ Radioshcakで揃うか?Amazonに行く必要があるか?電源on/offの制御�
   - ダミーの読み込みとその後のdelayを入れてADCの入力電圧を静定させても見える
   - 入力チャンネルを入れかえると発振しているチャンネルも入れかわる
 
-### 2017-06-17
+### パネル側の分圧抵抗に並列にコンデンサを付け発振を抑える
+2017-06-17
+
 [それぞれのチャンネルを500 msecずらして1 secごとに読んでみた](https://github.com/zunda/arduino-thermostat/blob/a5ceeb8be57593d53156d0999becbadf57ac6d54/Measure/Measure.ino)ところ、発振の周期は6秒程度だった。
 
 パネル側の分圧抵抗に並列に電解コンデンサを追加した(A0のみ4.7 kΩの抵抗に並列に47 uFの電解コンデンサを追加した)ところ発振が治まった。
@@ -265,3 +268,7 @@ Radioshcakで揃うか?Amazonに行く必要があるか?電源on/offの制御�
 ![panel-temp-with-cap](Measure/test/20170617.png)
 
 47 uFの電解コンデンサの在庫はもうないため、A1には追加できない。今後は、A0をパネル側の温度計(屋根の上にあり遠い)、A1をタンク側(近い)の温度計の入力として利用する。
+
+一晩のあいだ1秒周期で記録してみたところ、ADU単位の精度で温度が記録できたようだ。
+
+![one-night-measurement](Measure/test/20170618.png)
