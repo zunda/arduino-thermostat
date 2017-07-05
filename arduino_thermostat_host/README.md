@@ -20,6 +20,11 @@ Or install it yourself as:
 
     $ gem install arduino_thermostat_host
 
+wemote gem requires the `nmap` command:
+
+    $ sudo apt install nmap
+
+
 ## Usage
 
 TODO: Write usage instructions here
@@ -32,7 +37,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/arduino_thermostat_host.
+Bug reports and pull requests are welcome on GitHub at https://github.com/zunda/arduino-thermostat/arduino_thermostat_host.
 
 
 ## License

@@ -31,4 +31,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
 
   spec.add_dependency "serialport", "~> 1.3"
+  spec.add_dependency "wemote", "~> 0.2.2"
 end
